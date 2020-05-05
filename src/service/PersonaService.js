@@ -8,4 +8,8 @@ export default class PersonaService {
     getAll() {
         return axios.get(this.url + "all");
     }
+
+    save(persona) {
+        return axios.post(this.url + "save", persona)
+    }
 }
